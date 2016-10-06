@@ -1,3 +1,7 @@
-angular.module('devmtnTravel').controller('bookedCtrl', function ($scope, $stateParams, mainService) {
+angular.module('devmtnTravel').controller('bookedCtrl', function ($scope, $state, mainSrv) {
+
+  if ($stateParams.id === 'shoes') {
+        $scope.productData = productService.shoeData;
+    }
 
 })

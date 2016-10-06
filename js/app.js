@@ -32,7 +32,12 @@ angular.module('devmtnTravel', ['ui.router'])
                 templateUrl: "../views/locations.html",
                 controller: 'locationsCtrl',
                 controllerAs: 'vm'
+            })
+            .state('about', {
+              url: '/about',
+              templateUrl: "../views/about.html"
             });
+
 
         $urlRouterProvider
             .otherwise('/');
