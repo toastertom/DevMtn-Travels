@@ -2,10 +2,9 @@
       you will need to write a function that checks the url params and then loops over the data object in the service and then returns
       the object the matches the id being passed in the url params. Do this in your controller -->
 
-<section class="booked-main-container" >
+<section class="booked-main-container" ng-style="{'background':'url({{location.image}}) no-repeat center center fixed', 'background-size':'cover'}" >
 
     <h1>Thanks for trusting us with your trip to <br>   {{location.city}} </h1>
-    <img ng-style="{{location.image}}"></img>
     <!--The ui-sref should be pointing to the packages state -->
     <button ui-sref="packages"> VIEW MORE PACKAGES </button>
 </section>
